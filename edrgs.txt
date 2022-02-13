@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!-- 1 -->
+	<h1>Text Area</h1>
+	<textarea cols="50" rows="10" id="TA" maxlength="100"></textarea><span id="TAS">100</span><br><br><br>
+	<!-- 2 -->
+<h1>Password</h1>
+	<input id="pass" type="password" name="pass"><span><button id="but"></button></span>
+	<br><br><br>
+	<!-- 3 -->
+<h1 id="">Live Text</h1>
+	<input id="tt" type="text" name="">
+	<p id="tip"></p><br><br><br>
+	<!-- 4 -->
+<h1>Upper Case</h1>
+	<input id="tt2" type="text" name="">
+	<p id="tip2"></p>
+	
+	<script type="text/javascript">
+//1
+		document.getElementById('TA').style.length;
+		document.getElementById('TA').oninput = function textArea() {
+			document.getElementById('TAS').innerHTML = 100 - document.getElementById('TA').value.length;
+		}
+//2
+		document.getElementById('but').onclick = function n() {
+			if (document.getElementById('but').innerHTML = 'show'){
+				document.getElementById('but').innerHTML = 'hid' ;
+				document.getElementById('pass').type = 'text' ;
+				} else {
+				document.getElementById('but').innerHTML = 'show' ;
+				document.getElementById('pass').type = 'password' ;
+				}
+		}
+//3
+		document.getElementById('tt').oninput = function NAME() {
+			document.getElementById('tip').innerHTML = document.getElementById('tt').value;
+		}
+//4
+		document.getElementById('tt2').oninput = function namr (){
+			document.getElementById('tip2').innerHTML = document.getElementById('tt2').value;
+			document.getElementById('tip2').style.textTransform = 'capitalize';
+		}
+	</script>
+
+</body>
+</html>
